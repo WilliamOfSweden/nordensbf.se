@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik"
+    "jsxImportSource": "@builder.io/qwik",
+    "paths": {
+      "@components/*": ["src/components/*"],
+    }
   },
   "extends": "astro/tsconfigs/strictest"
 }
