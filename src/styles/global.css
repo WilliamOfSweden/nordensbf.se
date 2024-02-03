@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Palette */
+  --color-dark-blue: hsl(222, 38%, 14%);
+  --color-deeper-blue: hsl(227, 22%, 26%);
+  --color-light-blue: hsl(227, 22%, 29%);
+  --color-peach: hsl(25, 100%, 68%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Color definitions */
+  --main-bg-color: var(--color-dark-blue);
+  --main-text-color: var(--color-white);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
