@@ -6,6 +6,9 @@ export default {
 			backgroundColor: {
 				'main': 'var(--main-bg-color)',
 			},
+			colors: {
+				accent: 'var(--accent-color)', // Using the CSS variable directly
+			},
 			textColor: {
 				'main': 'var(--main-text-color)',
 			},
