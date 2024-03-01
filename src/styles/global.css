@@ -4,18 +4,34 @@
 
 :root {
   /* Color Palette */
-  --color-dark-blue: hsl(222, 38%, 14%);
-  --color-deeper-blue: hsl(227, 22%, 26%);
-  --color-light-blue: hsl(227, 22%, 29%);
-  --color-peach: hsl(25, 100%, 68%);
-  --color-white: hsl(0, 0%, 100%);
+  --color-extra-white: hsl(60, 16%, 85%);
+  --color-naval: hsl(222, 12%, 17%);
+  --color-saguaro: hsl(62, 41%, 24%);
+  --color-tont-taupe: hsl(47, 18%, 57%);
+  --color-wondrous-blue: hsl(228, 9%, 67%);
 
-  /* Color definitions */
-  --main-bg-color: var(--color-dark-blue);
-  --main-text-color: var(--color-white);
+
+  --main-bg-color: var(--color-naval);
+  --main-text-color: var(--color-extra-white);
+  --accent-color: var(--color-saguaro);
+  --accent-color-1: var(--color-saguaro);
+  --accent-color-2: var(--color-tont-taupe);
+  --accent-color-3: var(--color-wondrous-blue);
 }
 
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  overflow-x: hidden;
+}
+
+label {
+  color: var(--main-text-color);
+}
+
+
+.custom-font-size {
+  font-size: clamp(2rem, 3vw, 5rem);
 }

@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import { Button, Heading2, Paragraph } from '@components/atoms/index.astro';
+import gridImage1 from '@images/bricks-small.jpeg'
+import gridImage2 from '@images/facade.jpeg'
+import gridImage3 from '@images/stone-wall.jpeg'
+import gridImage4 from '@images/street.jpeg'
+---
+
+<section style="background: hsl(222, 12%, 17%);">
+<section class='max-w-3xl mx-auto px-4 py-16 lg:gap-x-8 lg:grid lg:grid-cols-2 lg:max-w-screen-2xl'>
+  <section class="gap-2 grid grid-cols-2 grid-rows-2 mb-5 lg:gap-4 lg:mb-0">
+    <Image alt="Brown concrete blocks near green trees during daytime." class="rounded-2xl" src={gridImage1} />
+    <Image alt="A black and white building with a window and a balcony." class="rounded-2xl" src={gridImage2} />
+    <Image alt="A cobblestone street lined with white buildings." class="rounded-2xl" src={gridImage4} />
+    <Image alt="Black metal fence near gray concrete wall." class="rounded-2xl" src={gridImage3} />
+  </section>
+  <section class="lg:flex lg:flex-col lg:justify-center">
+    <Heading2 text='Om Nordens Bygg och Fasadteknik AB' />
+    <Paragraph text='Med skicklighet och precision i varje detalj står Nordens Bygg och Fasadteknik AB för traditionellt hantverksskick och moderna lösningar inom mur och fasadarbeten, för kvalitetsmedvetna kunder i hela Sverige.' />
+    <Button data="contact-dialog" text="KONTAKTA OSS" />
+  </section>
+</section>
+</section>

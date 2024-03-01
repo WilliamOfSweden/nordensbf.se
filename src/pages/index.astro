@@ -1,7 +1,7 @@
 ---
-import '../styles/global.css';
-import Masthead from "@components/masthead.astro";
----
+import '@styles/global.css';
+import { AboutUsBlock, ContactDialog, FeaturesBlock, Masthead } from "@components/organisms/index.astro";
+ ---
 
 <html lang="sv">
 	<head>
@@ -12,6 +12,11 @@ import Masthead from "@components/masthead.astro";
 		<title>Nordens bygg och fasadteknik AB</title>
 	</head>
 	<body>
-		<Masthead />
+		<main>
+			<Masthead />
+			<FeaturesBlock />
+			<AboutUsBlock />
+			<ContactDialog />
+		</main>
 	</body>
 </html>
