@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { Button, Heading1, Paragraph } from '@components/atoms/index.astro';
+import { Button, ContactDialog, Heading1, Paragraph } from '@components/atoms/index.astro';
 import myImportedImage from '@images/bricks.jpeg'
 ---
 
@@ -9,6 +9,6 @@ import myImportedImage from '@images/bricks.jpeg'
   <section class="lg:flex lg:flex-col lg:justify-center">
     <Heading1 />
     <Paragraph text='Med skicklighet och precision i varje detalj står Nordens Bygg och Fasadteknik AB för traditionellt hantverksskick och moderna lösningar inom mur och fasadarbeten, för kvalitetsmedvetna kunder i hela Sverige.' />
-    <Button text="KONTAKTA OSS" />
+    <Button data="contact-dialog" text="KONTAKTA OSS" />
   </section>
 </section>

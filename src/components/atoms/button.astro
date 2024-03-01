@@ -1,5 +1,11 @@
 ---
-const { text } = Astro.props;
+const { id, data, fullWidth = false, text, variant } = Astro.props;
 ---
 
-<button class="bg-accent font-bold px-6 py-2 rounded-md tracking-widest w-full lg:w-fit">{text}</button>
+<button
+  class={`bg-accent font-bold px-6 py-2 rounded-md tracking-widest w-full border-2 ${!fullWidth ? 'lg:w-fit' : ''} ${variant === 'secondary' ? 'bg-transparent border-secondary' : 'border-accent'} text-main`}
+  data-target={data}
+  id={id}
+>
+  {text}
+</button>

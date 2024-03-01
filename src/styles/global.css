@@ -16,6 +16,7 @@
   --accent-color: var(--color-saguaro);
   --accent-color-1: var(--color-saguaro);
   --accent-color-2: var(--color-tont-taupe);
+  --accent-color-3: var(--color-wondrous-blue);
 }
 
 body {
@@ -24,6 +25,10 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 1.2rem;
   overflow-x: hidden;
+}
+
+label {
+  color: var(--main-text-color);
 }
 
 
