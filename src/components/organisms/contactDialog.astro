@@ -1,0 +1,33 @@
+---
+import { Button } from '@components/atoms/index.astro';
+import { ContactForm } from "./index.astro";
+---
+
+<dialog class="bg-main shadow-md rounded-lg px-8 pt-6 pb-8 w-full max-w-lg backdrop:bg-black/50 backdrop:backdrop-blur-sm" id="contact-dialog">
+  <ContactForm />
+  <Button id="closeDialog"  fullWidth={true} text="STÄNG" variant="secondary" />
+</dialog>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('contact-dialog');
+    const openButtons = document.querySelectorAll('[data-target="contact-dialog"]');
+    const closeButton = document.getElementById('closeDialog');
+
+    openButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        dialog.showModal();
+      });
+    });
+
+    closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+  });
+</script>
