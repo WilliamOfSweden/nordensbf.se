@@ -10,10 +10,12 @@
   --color-tont-taupe: hsl(47, 18%, 57%);
   --color-wondrous-blue: hsl(228, 9%, 67%);
 
-  /* Color definitions */
+
   --main-bg-color: var(--color-naval);
   --main-text-color: var(--color-extra-white);
   --accent-color: var(--color-saguaro);
+  --accent-color-1: var(--color-saguaro);
+  --accent-color-2: var(--color-tont-taupe);
 }
 
 body {

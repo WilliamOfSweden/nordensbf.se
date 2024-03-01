@@ -1,0 +1,16 @@
+---
+import type { AstroComponent } from 'astro';
+import { FeaturesItemParagraph, Heading2Small } from '@components/atoms/index.astro';
+
+interface Props {
+  heading: string;
+  icon: AstroComponent;
+  paragraph: string;
+}
+
+const {  heading, icon: Icon, paragraph } = Astro.props as Props;
+---
+
+<Icon />
+<Heading2Small text={heading} />
+<FeaturesItemParagraph text={paragraph} />
