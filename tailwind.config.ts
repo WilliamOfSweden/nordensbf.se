@@ -7,7 +7,8 @@ export default {
 				'main': 'var(--main-bg-color)',
 			},
 			colors: {
-				accent: 'var(--accent-color)', // Using the CSS variable directly
+				accent: 'var(--accent-color-1)',
+				"accent-2": 'var(--accent-color-2)',
 			},
 			textColor: {
 				'main': 'var(--main-text-color)',
