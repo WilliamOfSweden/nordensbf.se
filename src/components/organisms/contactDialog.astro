@@ -14,13 +14,13 @@ import { ContactForm } from "./index.astro";
     const openButtons = document.querySelectorAll('[data-target="contact-dialog"]');
     const closeButton = document.getElementById('closeDialog');
 
-    openButtons.forEach(button => {
+    openButtons?.forEach(button => {
       button.addEventListener('click', () => {
         dialog?.showModal();
       });
     });
 
-    closeButton.addEventListener('click', () => {
+    closeButton?.addEventListener('click', () => {
       dialog?.close();
     });
 
