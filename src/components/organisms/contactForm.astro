@@ -2,7 +2,7 @@
 import { Button } from '@components/atoms/index.astro';
 ---
 
-<form autocomplete="on" class="flex flex-col text-main mb-4" data-netlify="true" enctype="application/x-www-form-urlencoded" id="contact-form" method="POST" name="contact-form">
+<form autocomplete="on" class="flex flex-col text-main mb-4" id="contact-form" name="contact-form" netlify>
   <label class="bg-main block text-sm font-bold mb-2" for="name">* Namn</label>
   <input autocomplete="name" class="bg-main shadow appearance-none border border-secondary rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline mb-4" id="name" name="name" required="" type="text">
   <label class="bg-main block text-sm font-bold mb-2" for="email">* E-post</label>
