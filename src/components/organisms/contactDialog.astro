@@ -10,23 +10,23 @@ import { ContactForm } from "./index.astro";
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const dialog = document.getElementById('contact-dialog');
+    const dialog = document.getElementById('my-dialog') as HTMLDialogElement;
     const openButtons = document.querySelectorAll('[data-target="contact-dialog"]');
     const closeButton = document.getElementById('closeDialog');
 
     openButtons.forEach(button => {
       button.addEventListener('click', () => {
-        dialog.showModal();
+        dialog?.showModal();
       });
     });
 
     closeButton.addEventListener('click', () => {
-      dialog.close();
+      dialog?.close();
     });
 
     window.addEventListener('click', (event) => {
       if (event.target === dialog) {
-        dialog.close();
+        dialog?.close();
       }
     });
   });

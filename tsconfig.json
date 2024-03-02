@@ -2,10 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik",
     "paths": {
       "@components/*": ["src/components/*"],
-        "@images/*": ["src/images/*"],
+      "@images/*": ["src/images/*"],
       "@styles/*": ["src/styles/*"],
     }
   },
