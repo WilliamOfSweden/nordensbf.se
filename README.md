@@ -10,4 +10,6 @@ Company website, built with Astro, TypeScript, and Tailwind CSS.
 ---
 
 ## This website is currently being developed.
-![Under construction page.](https://openclipart.org/download/231626/underconstruction.svg)
+![Under construction page.](https://upload.wikimedia.org/wikipedia/commons/d/dc/Under_construction.svg)
+
+
